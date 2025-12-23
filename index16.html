@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset basic defaults */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Navbar */
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Center container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    /* Card design */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card-content h3 {
+      margin-top: 15px;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .old-price {
+      color: #888;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    /* Button style */
+    .button {
+      background-color: #0860da;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #004bbd;
+    }
+  </style>
+</head>
+
+<body>
+  <header>E Commerce Store</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://vibemonkey.in/cdn/shop/files/f77a7f7c-30d2-4ed3-b7cc-6949bcd4a8e5_ae571c48-2a5c-46f4-9237-cb93d69f0264.png?v=1757611170&width=1920" alt="T-shirt">
+      <div class="card-content">
+        <h3>Classic Cotton T-Shirt</h3>
+        <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
+        <span class="price">₹499</span>
+        <span class="old-price"><del>₹1,199</del></span>
+        <br><br>
+        <input type="button" class="button" value="Add to Cart">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
